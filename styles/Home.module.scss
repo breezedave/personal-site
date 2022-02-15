@@ -1,0 +1,21 @@
+.card {
+    width: 100;
+    background-color: rgba(255,255,255,.4);
+    border-radius: .4rem;
+    box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.35);
+    margin-top: 4rem;
+    padding: 2rem;
+}
+
+.intro {
+    text-align: center;
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 3rem;
+        margin: 0 0 1rem;
+    }
+}

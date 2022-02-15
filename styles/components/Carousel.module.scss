@@ -1,0 +1,99 @@
+.carousel {
+    border-radius: .4rem;
+    margin: 2rem auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: .2rem #ccc solid;
+    border-radius: .4rem;
+    background-color: white;
+}
+
+.carouselInner {
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    flex: 0 0 calc(100% - 8rem);
+}
+
+.buttonLeft,
+.buttonRight {
+    flex: 0 0 4rem;
+    width: 4rem;
+    height: 100%;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+
+.buttonLeft {
+    border-right: .2rem #ccc solid;
+}
+
+.buttonRight {
+    border-left: .2rem #ccc solid;
+}
+
+.row {
+    width: 700rem;
+    display: flex;
+    transform: translateX(0);
+    transition-property: transform;
+    transition-duration: 500ms;
+    transition-delay: 0s;
+}
+
+.carouselInnerItem {
+    position: relative;
+    overflow: hidden;
+    border-radius: .4rem;
+    margin-left: 2rem;
+    border: .4rem white solid;
+    box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.35);
+
+    h2 {
+        position: absolute;
+        z-index: 1;
+        width: 90%;
+        height: auto;
+        top: 0rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(255,255,255,.9);
+        border-radius: .4rem;
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        justify-content: center;
+        font-size: 1.4rem;
+    }
+
+    *:nth-child(3) {
+        flex: 1 1 auto;
+        position: absolute;
+        z-index: 1;
+        width: 95%;
+        height: auto;
+        padding: 1rem;
+        bottom: 0rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(255,255,255,.9);
+        border-radius: .4rem;
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        font-weight: 400;    
+        font-size: 1.2rem;
+    }
+
+    video {
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+    }
+}

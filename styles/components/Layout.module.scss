@@ -1,0 +1,85 @@
+.bg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+
+.layoutOuter {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    @media print {
+        width: 72.5rem;
+        height: auto;
+        overflow: visible;
+    }
+}
+
+.layout {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @media print {
+        display: block;
+    }
+}
+
+.pageHeader {
+    flex: 0 0 5.2rem;
+    width: 100%;
+    height: 5rem;
+    background-color: var(--color-primary);
+    border-bottom: .2rem solid var(--border-color);
+    box-shadow: var(--hanging-shadow);
+    display: flex;
+    padding: 0 2rem;
+
+    @media print {
+        display: none;
+    }
+}
+
+.logo,
+.headerLinks {
+    color: var(--text-secondary);
+    margin: 0;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        transform: translateY(-.2rem);
+    }
+}
+
+
+.headerLinks {
+    margin-left: 4rem;
+    font-size: 1.8rem;
+    padding-top: 1.1rem;
+}
+
+.pageBody {
+    flex: 1 1 auto;
+    width: 100%;
+    overflow-y: auto;
+
+    @media print {
+        display: block;
+        overflow: visible;
+    }
+}
+
+.pageFooter {
+    flex: 0 0 3rem;
+    width: 100%;
+
+    @media print {
+        display: none;
+    }
+}
+
